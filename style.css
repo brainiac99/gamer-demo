@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+.navigation {
+  padding-block: 2rem;
+  box-shadow: 0 0 10px 0px #5f5f5f;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10rem;
+}
+
+.nav-inner,
+.main {
+  margin-inline: auto;
+  max-width: 1344px;
+}
+
+.logo {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo img {
+  height: 2.8rem;
+}
+
+.logo-name {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.logo-name span {
+  color: #ff42a5;
+}
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #3c354f;
+  transition: 0.3s;
+}
+
+.nav-link:hover a {
+  color: #ff42a5;
+}
+
+.nav-cta {
+  background-color: rgba(11, 3, 36, 0.1);
+  padding: 1.2rem;
+  border-radius: 6px;
+}
+
+.nav-cta a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-cta i {
+  display: block;
+  font-size: 2.2rem;
+}
+
+.section-hero img {
+  width: 100%;
+}
+
+.hero-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  padding-right: 10rem;
+}
+
+.top-text {
+  display: flex;
+  height: 100%;
+  /* align-self: center; */
+  background-image: url(./images/Group\ 14.png);
+  background-size: 100%;
+  padding-left: 10rem;
+}
+
+.top-text-content {
+  align-self: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-text {
+  background: linear-gradient(#f948b2, #8758f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.top-features li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: hue-rotate(45deg);
+}
+
+.top-btns {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #ff42a5;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #4ec5f7;
+  color: white;
+}
+
+.hero-bottom {
+  background-color: rgba(255, 66, 164, 0.03);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline: 10rem;
+  height: 40rem;
+  align-items: center;
+}
+
+.bottom-text {
+  text-align: right;
+}
+
+.bottom-text .main-text {
+  font-size: 2.8rem;
+}
+
+.bottom-description {
+  margin-left: 4rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+
+  margin-bottom: 1rem;
+}
+
+.purpose {
+  font-size: 2.4rem;
+  margin-block: 2rem;
+  margin-bottom: 0.5rem;
+  color: #534c64;
+}
+
+.motto {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #534c64;
+}
+
+.section-games {
+  margin-top: 4rem;
+  padding-inline: 10rem;
+}
+
+.section-games img {
+  width: 100%;
+}
+
+.games-heading {
+  text-align: center;
+}
+
+.games-title,
+.games-title .main-text {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.games-des {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+}
+
+.game-des {
+  margin-top: 1rem;
+  color: #534c64;
+  font-size: 1.1rem;
+}
+
+.game-img::before,
+.game-img::after {
+  color: #ff42a5;
+  position: absolute;
+  inset: 0;
+  border: 2px solid #ff42a5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  border-radius: 12px;
+
+  z-index: -1;
+}
+
+.game-img::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f144";
+  padding-bottom: 3rem;
+  background-color: rgba(11, 2, 35, 0.7);
+}
+.game-img::after {
+  content: "Watch Now";
+  padding-top: 3rem;
+}
+
+.game-img:hover::before,
+.game-img:hover::after {
+  z-index: 2;
+}
+
+.game-img {
+  position: relative;
+}
+
+.section-show {
+  padding-inline: 10rem;
+  margin-top: 4rem;
+}
+
+.show {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: end;
+  align-items: center;
+  gap: 12rem;
+
+  margin-bottom: 8rem;
+}
+
+.show-img {
+  max-width: 45rem;
+}
+
+.show-img img {
+  max-width: 100%;
+  margin-left: auto;
+}
+
+.show-text {
+  justify-self: end;
+  text-align: right;
+  max-width: max-content;
+}
+
+.show-title p.main-text,
+.show-title {
+  font-size: 2.6rem;
+  margin-bottom: 0;
+}
+
+.text {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  color: #534c64;
+}
+
+.show-img {
+  position: relative;
+}
+
+.show-img-secondary {
+  max-width: 60%;
+  height: auto;
+  position: absolute;
+  left: -20%;
+  bottom: -20%;
+}
+
+.show-img-secondary img {
+  width: 100%;
+  display: block;
+}
+
+.section-career {
+  margin-top: 12rem;
+  padding: 6rem 10rem;
+  padding-right: 0;
+  background-color: #ff42a5;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+
+.career-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.career-heading {
+  font-size: 2.4rem;
+}
+
+.career-des {
+  font-size: 1.1rem;
+  color: #e9e9e9;
+}
+
+.career-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.career-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.career-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-career {
+  width: max-content;
+  color: #ff42a5;
+  font-weight: 700;
+  background-color: white;
+}
+
+.btn-career:hover {
+  background-color: #0026ff;
+  color: #ffe600;
+}
+
+.section-genre {
+  padding: 4rem 10rem;
+  background-color: rgba(255, 66, 165, 0.03);
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.genre img {
+  width: 3rem;
+}
+
+.genre p {
+  width: max-content;
+  margin-right: 0.5rem;
+}
+
+.genre {
+  flex-shrink: 1;
+  flex-basis: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.genre:hover,
+.active {
+  border: 1px solid #ff42a5;
+  color: #ff42a5;
+}
+
+.footer {
+  background-color: #0b0223;
+  color: white;
+  text-align: center;
+  padding-block: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer ul {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-icon-list a {
+  font-size: 2.4rem;
+}
+
+.footer-icon-list i {
+  color: #fff;
+}
+
+.footer-icon-list i:hover {
+  color: #ff42a5;
+}
+
+.footer-terms-list,
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 750px) {
+  .navigation {
+    box-shadow: none;
+  }
+
+  .nav-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .main {
+    padding-inline: 5rem;
+  }
+  .hero-top {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+  }
+
+  .top-text {
+    width: 100%;
+    padding: 0;
+
+    grid-row: 2/3;
+  }
+
+  .top-text-content {
+    margin-inline: auto;
+  }
+
+  .hero-bottom {
+    background: transparent;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    height: auto;
+  }
+  .bottom-text {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .section-games {
+    padding: 0;
+  }
+  .game-grid {
+    text-align: center;
+    padding-inline: 4rem;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .game-des {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .section-show {
+    padding: 0;
+    margin-top: 8rem;
+  }
+  .show {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .show-text {
+    text-align: center;
+    justify-self: center;
+  }
+  .show-img {
+    justify-self: end;
+    max-width: 40rem;
+    margin-right: 4rem;
+  }
+
+  .section-career {
+    grid-template-columns: 1fr;
+    margin-inline: -5rem;
+    padding: 5rem;
+  }
+
+  .section-genre {
+    background-color: transparent;
+    padding: 4rem 0;
+  }
+}
